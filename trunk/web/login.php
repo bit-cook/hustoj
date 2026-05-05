@@ -110,7 +110,7 @@ if ($login) {
     }
     echo "<script language='javascript'>\n";
     if (isset($_SESSION[$OJ_NAME . "_administrator"]))
-        echo "window.location.href='admin';\n";
+        echo "window.location.href='admin/';\n";
     else if (isset($_SESSION[$OJ_NAME . "_contest_creator"]))
         echo "window.location.href='contest.php?my';\n";
     else if ($OJ_NEED_LOGIN)
